@@ -60,9 +60,6 @@ JOIN departments ON dept_manager.dept_no = departments.dept_no
 JOIN employees ON dept_manager.emp_no = employees.emp_no;
 
 -- 4. List the department of each employee with the following information: employee number, last name, first name, and department name.
--------------------------------------------------------------------------
--- Adam: there's duplication going on here. FIX IT.
--------------------------------------------------------------------------
 SELECT employees.emp_no, employees.last_name, employees.first_name, departments.dept_name
 FROM employees
 JOIN dept_emp ON employees.emp_no = dept_emp.emp_no
